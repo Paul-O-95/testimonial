@@ -1,0 +1,89 @@
+html { 
+    background: url(snow.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper{
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 5rem;
+}
+
+.image-div{
+    height:300px;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.testimonial-container{
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prevBtn, .nextBtn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: pink;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+  .nextBtn {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slides{
+    display: flex;
+    /* flex-direction: column; */
+    color: white;
+}
+
+.slides p{
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.slides h3, p{
+    padding-left: 2rem;
+}
+
+
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+    img{
+        height: 6rem;
+        margin-left: 6rem;
+    }
+}
+
+.prevBtn , .nextBtn{
+    margin-bottom: 5rem;
+}
+
+
+
+@media (min-width:1281px) { /*big landscape tablets, laptops, and desktops */
+    img{
+        height: 6rem;
+        margin-left: 26rem;
+        margin-top: 7rem;
+    }
+}
